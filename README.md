@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+YourHR - Job Search Service
+YourHR is a job search service designed to help job seekers find ideal job roles based on their qualifications and preferences. This web application allows users to sign up, fill out a form with personal information, and upload their resumes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project Overview
+This project consists of a full-stack web application with separate frontend and backend repositories. The frontend is hosted on Vercel, and the backend requires a MongoDB URI for database connectivity.
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+User Signup: Allows job seekers to create an account by filling out personal information.
 
-### `npm start`
+Resume Upload: Users can upload their resumes for job applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Data Storage: Securely stores user information and resumes in a MongoDB database.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Responsive Design: accessible on various devices.
 
-### `npm test`
+Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend: React (hosted on Vercel)
 
-### `npm run build`
+Backend: Node.js, Express.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Database: MongoDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Hosting: Frontend hosted on Vercel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Frontend Repo: https://github.com/tejasjaiswal07/yourhr
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Hosted Link: https://vercel.com/tejasjaiswal07s-projects/yourhr-frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Backend Repository
+The backend is built with Node.js and Express.js, managing the server-side logic and connecting to MongoDB.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Backend Repo: https://github.com/tejasjaiswal07/yourhr-backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Setup Instructions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the frontend repository: https://github.com/tejasjaiswal07/yourhr
 
-### Code Splitting
+git clone https://github.com/tejasjaiswal07/yourhr
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+cd frontend
 
-### Analyzing the Bundle Size
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
 
-### Making a Progressive Web App
+Runs the app at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Backend
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Clone the backend repository:
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+git clone https://github.com/tejasjaiswal07/yourhr-backend
 
-### `npm run build` fails to minify
+cd backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm install
+
+
+Set up the environment variables:
+
+Create a .env file in the backend directory with the following:
+
+MONGODB_URI=<Your MongoDB Connection String>
+
+PORT=5000
+
+Start the backend server:
+
+node server.js
+
+Connecting Frontend and Backend
+
+Ensure the backend is running and accessible at the configured URL.
+
+
